@@ -116,6 +116,10 @@
 }
 
                 /*  banner section styles end...  */
+
+
+                /* team section styles */
+
 .team-container{
     padding: 0 240px;
     display: flex;
@@ -157,6 +161,19 @@
     font-size: 1.9rem;
     font-weight: 700;
 }
+
+                /* team section styles end */
+
+
+                /* online section styles.... */
+
+ .online-description{
+    color: #534C64;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    padding-bottom: 48px;
+}           
 .black-shade{
     color: #0B0223;
     text-align: right;
@@ -184,4 +201,17 @@
     font-weight: 400;
     line-height: 30px;
     padding-bottom: 48px;
+}
+.game-boxs{
+    border: 2px solid red;
+    display: flex;
+    justify-content: center;
+    gap: 24px; 
+    margin-bottom: 120px;
+}
+.box-description{
+    padding-top: 24px;
+    color: #534C64;
+    font-size: 1.3rem;
+    font-weight: 500;
 }

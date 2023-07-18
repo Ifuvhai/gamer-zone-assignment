@@ -116,3 +116,72 @@
 }
 
                 /*  banner section styles end...  */
+.team-container{
+    padding: 0 240px;
+    display: flex;
+    gap: 52px;
+    margin-bottom: 120px;
+}
+.team-text{
+    margin-top: 80px;
+    display: flex;
+    text-align: end;
+}
+
+.team-text-title{
+    font-size: 3rem;
+    font-weight: 700;
+    padding-bottom: 24px;
+}
+.team-text-description{
+    color: #534C64;
+    text-align: right;
+    font-size: 1.1rem;
+    font-weight: 400;
+    padding-bottom: 32px;
+    line-height: 24px;
+}
+.team-btn{
+    border: none;
+    color: #FFF;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 48px;
+    background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+    padding: 21px 40px;
+    margin-bottom: 24px;
+}
+.team-quote{
+    color: #534C64;
+    font-size: 1.9rem;
+    font-weight: 700;
+}
+.black-shade{
+    color: #0B0223;
+    text-align: right;
+    font-family: Work Sans;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.online-title{
+    text-align: center;
+}
+.blue-shade{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3rem;
+    font-weight: 700;
+    padding-bottom: 16px;
+}
+.online-description{
+    color: #534C64;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    padding-bottom: 48px;
+}

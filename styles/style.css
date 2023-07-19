@@ -204,7 +204,9 @@
 }
 .game-boxs{
     /* border: 2px solid red; */
-    display: flex;
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: repeat(4, 340px);
     justify-content: center;
     gap: 24px; 
     margin-bottom: 120px;
@@ -433,7 +435,7 @@ color: #FF42A5;
 
 /* small device styles */
 
-@media screen and (max-width:576px) {
+@media screen and (max-width:676px) {
     .nav-container{
         flex-direction: column;
         padding: 0;
@@ -458,8 +460,18 @@ color: #FF42A5;
         flex-direction: column-reverse;
         gap: 20px;
     }
+    .top-text{
+        font-size: 2.5rem;
+    }
+    .banner-title{
+        font-size: 4.9rem;
+    }
     .banner-text{
-        padding-left: 18px;
+        padding-left: 5px;
+    }
+    .btn-go-rogue, .btn-sign-in{
+        padding: 18px 40px;
+        font-size: 1rem;
     }
     .banner-image-section img{
         width: 100%;
@@ -468,14 +480,19 @@ color: #FF42A5;
         flex-direction: column;
         padding: 0;
     }
+    .team-image img{
+        width: 100%;
+    }
     .game-boxs{
-        flex-direction: column;
+        grid-template-columns: repeat(1, 1fr);
         align-items: center;
-        /* padding: 0px 10px; */
+        justify-items: center;
+        padding-left: 20px;
     }
     .anniversery-container{
         flex-direction: column;
         padding: 0;
+        gap: 30px;
     }
     .anniversery-text{
         padding-right: 10px;
@@ -486,7 +503,8 @@ color: #FF42A5;
     }
     .overflow-img img{
         width: 100%;
-        margin-top: 170px;
+        margin-top: 200px;
+        margin-right: 20px;
     }
     .career-container{
         height: auto;
@@ -503,9 +521,6 @@ color: #FF42A5;
     .one{
         padding: 0;
         margin: 0;
-    }
-    .team-image img{
-        width: 100%;
     }
     .career-img img{
         width:100%;
@@ -532,3 +547,93 @@ color: #FF42A5;
         gap: 10px;
     }
 }
+
+
+/* medium device */
+@media screen and (min-width:676px) and (max-width:1024px) {
+    .nav-container{
+        height: 160px;
+        flex-direction: column;
+    }
+    .menus{
+        /* padding-left: 50px; */
+        margin-right: 0;
+        gap: 30px;
+    }
+    .list{
+        padding: 17px 20px 18px 18px;
+    }
+    .fa-youtube{
+        padding: 7px;
+    }
+    .fa-tiktok{
+        padding: 5px;
+    }
+    .banner-container{
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+    .banner-text{
+        padding-left: 18px;
+    }
+    .banner-image-section img{
+        width: 100%;
+    }
+    .team-container{
+        flex-direction: column;
+        padding: 0;
+    }
+    .team-text{
+        padding-right: 10px;
+    }
+    .team-image img{
+        width: 100%;
+    }
+    .game-boxs{
+        grid-template-columns: repeat(2, 340px);
+        align-items: center;
+        /* padding: 0px 10px; */
+    }
+    .anniversery-container{
+        flex-direction: column;
+        padding: 0;
+        gap: 50px;
+    }
+    .anniversery-text{
+        padding-right: 10px;
+    }
+    .anniversery-image img{
+        width: 100%;
+        padding-left: 10px;
+    }
+    .overflow-img img{
+        width: 50%;
+        margin-left: 250px;
+    }
+    .career-container{
+        height: auto;
+        flex-direction: column;
+        padding: 10px;
+    }
+    .career-btn{
+        margin-left: 130px;
+    }
+    .games-container{
+        grid-template-columns: repeat(3, 200px);
+        gap: 40px;
+        justify-content: center;
+        padding: 0;
+        gap: 20px;
+        row-gap: 50px;
+    }
+    .one{
+        padding: 0;
+        margin: 0;
+    }
+    .footer-list{
+        grid-template-columns: repeat(3,1fr);
+        gap: 20px;
+        padding: 2px;
+        margin-bottom: 25px;
+    }
+} 

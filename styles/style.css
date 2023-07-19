@@ -270,6 +270,8 @@
 
                     /* online section styles end */
 
+
+                /* anniversery section styles here.. */
 .anniversery-container{
     padding: 0 240px 0 430px;
     display: flex;
@@ -356,6 +358,7 @@
     background:#1b9945;
     color: #FFF;
 }
+                    /* game section styles here.. */
 .games-container{
     margin: 120px 0;
     display: grid;
@@ -385,7 +388,10 @@
     font-size: 1.3rem;
     font-weight: 600;
 }
+                /* game section styles.. */
 
+
+                /* footer section styles... */
 .footer-container{
     width: auto;
     display: flex;

@@ -355,7 +355,6 @@ color: #FF42A5;
     background: #0B0223;
 }
 .footer-text-section{
-    border: 2px solid blue;
 }
 .footer-title-text{
     display: flex;
@@ -365,17 +364,9 @@ color: #FF42A5;
 }
 .footer-title{
     text-align: center;
-    font-family: Work Sans;
-    font-size: 45px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
     color: #FFF;
-    font-family: Work Sans;
-    font-size: 45px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+    font-size: 2.8rem;
 }
 .footer-list{
     display: flex;
@@ -383,44 +374,36 @@ color: #FF42A5;
     gap: 60px;
     color: #FFF;
     text-align: center;
-    font-family: Work Sans;
-    font-size: 18px;
-    font-style: normal;
+    font-size: 1.1rem;
     font-weight: 600;
-    line-height: normal;
     padding-bottom: 56px;
-    /* justify-content: space-between; */
+
 }
 .footer-icons{
-    border: 2px solid tomato;
+    
     display: flex;
+    justify-content: center;
     gap: 40px;
     color: #FFF;
-    /* padding-bottom: 74px; */
+    padding-bottom: 64px;
 }
-.fa-square-twitter{
-    width: 100.13px;
-height: 40px;
-flex-shrink: 0;
+.social-icons{
+    font-size: 50px;
 }
+
 .footer-description{
     display: flex;
     gap: 60px;
     color: rgba(255, 255, 255, 0.60);
-text-align: center;
-font-family: Work Sans;
-font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+
 }
 .copyright{
     color: rgba(255, 255, 255, 0.60);
     text-align: center;
-    font-family: Work Sans;
-    font-size: 16px;
-    font-style: normal;
+    font-size: 1rem;
     font-weight: 500;
-    line-height: normal;
-    padding-top: 10px;
+    padding-top: 25px;
 }

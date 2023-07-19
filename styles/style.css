@@ -345,3 +345,82 @@ color: #FF42A5;
     font-weight: 600;
     line-height: normal;
 }
+
+.footer-container{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 630px;
+    background: #0B0223;
+}
+.footer-text-section{
+    border: 2px solid blue;
+}
+.footer-title-text{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 56px;
+}
+.footer-title{
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #FFF;
+    font-family: Work Sans;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.footer-list{
+    display: flex;
+    list-style: none;
+    gap: 60px;
+    color: #FFF;
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-bottom: 56px;
+    /* justify-content: space-between; */
+}
+.footer-icons{
+    border: 2px solid tomato;
+    display: flex;
+    gap: 40px;
+    color: #FFF;
+    /* padding-bottom: 74px; */
+}
+.fa-square-twitter{
+    width: 100.13px;
+height: 40px;
+flex-shrink: 0;
+}
+.footer-description{
+    display: flex;
+    gap: 60px;
+    color: rgba(255, 255, 255, 0.60);
+text-align: center;
+font-family: Work Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.copyright{
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-top: 10px;
+}

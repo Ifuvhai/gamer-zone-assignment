@@ -291,8 +291,12 @@
     padding-bottom: 32px;
 }
 .career-details{
-    display: flex;
-    justify-content: space-between;
+    /* display: flex;
+    justify-content: space-between; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 55px;
+    justify-items: end;
     color: #FFF;
 font-family: Work Sans;
 font-size: 20px;
@@ -300,6 +304,9 @@ font-style: normal;
 font-weight: 600;
 line-height: 40px; /* 200% */
 padding-bottom: 40PX;
+}
+.city{
+    text-align: end;
 }
 .career-btn{
 padding: 21px 40px;
@@ -317,6 +324,14 @@ color: #FF42A5;
 
 .games-container{
     margin: 120px 0;
+    display: grid;
+    grid-template-columns: repeat(5, 280px);
+    row-gap: 30px;
+    padding-left: 240px;
+}
+.one{
+    margin-left: 110px;
+    width: 290px;
 }
 .games-box{
     display: flex;
@@ -326,17 +341,17 @@ color: #FF42A5;
     border-radius: 50px;
     background: #FFF;
 }
-.first-container{
+/* .first-container{
     padding: 0 280px 0 240px;
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
-}
-.second-container{
+} */
+/* .second-container{
     padding: 0 377px 0 325px;
     display: flex;
     justify-content: space-between;
-}
+} */
 .game-title{
     color: #0B0223;
     font-family: Work Sans;
@@ -369,7 +384,9 @@ color: #FF42A5;
     font-size: 2.8rem;
 }
 .footer-list{
-    display: flex;
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
     list-style: none;
     gap: 60px;
     color: #FFF;
@@ -380,20 +397,24 @@ color: #FF42A5;
 
 }
 .footer-icons{
-    
-    display: flex;
-    justify-content: center;
-    gap: 40px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    /* display: flex;
+    justify-content: center; */
+    /* gap: 40px; */
     color: #FFF;
+    margin-left: 80px;
     padding-bottom: 64px;
 }
 .social-icons{
-    font-size: 50px;
+    font-size: 40px;
 }
 
 .footer-description{
-    display: flex;
-    gap: 60px;
+    /* display: flex;
+    gap: 60px; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     color: rgba(255, 255, 255, 0.60);
     text-align: center;
     font-size: 1rem;
@@ -406,4 +427,108 @@ color: #FF42A5;
     font-size: 1rem;
     font-weight: 500;
     padding-top: 25px;
+}
+
+/* responsive styles here */
+
+/* small device styles */
+
+@media screen and (max-width:576px) {
+    .nav-container{
+        flex-direction: column;
+        padding: 0;
+        justify-content: center;
+        height: 320px;
+    }
+    .nav-text{
+        flex-direction: column;
+        gap: 0;
+    }
+    .nav-title{
+        padding-bottom: 20px;
+    }
+    .menus{
+        flex-direction: column;
+        padding-left: 50px;
+    }
+    .list{
+        padding-bottom: 20px;
+    }
+    .banner-container{
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+    .banner-text{
+        padding-left: 18px;
+    }
+    .banner-image-section img{
+        width: 100%;
+    }
+    .team-container{
+        flex-direction: column;
+        padding: 0;
+    }
+    .game-boxs{
+        flex-direction: column;
+        align-items: center;
+        /* padding: 0px 10px; */
+    }
+    .anniversery-container{
+        flex-direction: column;
+        padding: 0;
+    }
+    .anniversery-text{
+        padding-right: 10px;
+    }
+    .anniversery-image img{
+        width: 80%;
+        padding-left: 10px;
+    }
+    .overflow-img img{
+        width: 100%;
+        margin-top: 170px;
+    }
+    .career-container{
+        height: auto;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .games-container{
+        grid-template-columns: repeat(1, 240px);
+        gap: 40px;
+        justify-content: center;
+        padding: 0;
+    }
+    .one{
+        padding: 0;
+        margin: 0;
+    }
+    .team-image img{
+        width: 100%;
+    }
+    .career-img img{
+        width:100%;
+    }
+    .career-details{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0;
+        font-size: 1rem;
+    }
+    .footer-container{
+        padding: 0;
+    }
+    .footer-list{
+        grid-template-columns: repeat(3,1fr);
+        gap: 5px;
+        padding: 2px;
+        margin-bottom: 25px;
+    }
+    .footer-icons{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .footer-description{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
 }
